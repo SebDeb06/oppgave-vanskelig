@@ -62,14 +62,34 @@ rightBox.appendChild(rightBox1)
 rightBox.appendChild(rightBox2)
 rightBox.appendChild(rightBox3)
 
-// 
+// Function that changes the style for rightbox to start
 function justifyStart(){
-    rightBox.classList.add()
+    rightBox.style.justifyContent = "start";
+}
+
+// Function that changes the style for rightbox to center
+function justifyCenter(){
+    rightBox.style.justifyContent = "center";
+}
+
+// Function that changes the style for rightbox to space-between
+function justifySpaceBetween(){
+    rightBox.style.justifyContent = "space-between";
+}
+
+// Function that changes the style for rightbox to space-around
+function justifySpaceAround(){
+    rightBox.style.justifyContent = "space-around";
+}
+
+// Function that changes the style for rightbox to space-evenly
+function justifySpaceEvenly(){
+    rightBox.style.justifyContent = "space-evenly";
 }
 
 // Makes the buttons clickable and make them call a function
 button1.addEventListener("click", justifyStart)
-button2.addEventListener("click", RuneSide)
-button3.addEventListener("click", EgilSide)
-button4.addEventListener("click", RuneSide)
-button5.addEventListener("click", EgilSide)
+button2.addEventListener("click", justifyCenter)
+button3.addEventListener("click", justifySpaceBetween)
+button4.addEventListener("click", justifySpaceAround)
+button5.addEventListener("click", justifySpaceEvenly)
